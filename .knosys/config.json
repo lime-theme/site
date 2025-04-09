@@ -6,7 +6,7 @@
       "generator": "hexo",
       "data": "./man",
       "git": {
-        "url": "https://github.com/lime-theme/site.git",
+        "url": "https://github.com/lime-theme/lime-theme.github.io.git",
         "branch": "main"
       }
     }

@@ -128,7 +128,7 @@ theme_config:
       - text: 关于
         url: /zh/about/
       - text: 资助
-        url: /zh/about/#donation
+        url: /zh/about/#资助
 
 ksio:
   defaults:
