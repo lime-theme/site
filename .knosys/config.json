@@ -1,0 +1,14 @@
+{
+  "command": "./.knosys/scripts/command",
+  "site": {
+    "default": {
+      "alias": "lime-site",
+      "generator": "hexo",
+      "data": "./man",
+      "git": {
+        "url": "https://github.com/lime-theme/site.git",
+        "branch": "main"
+      }
+    }
+  }
+}
