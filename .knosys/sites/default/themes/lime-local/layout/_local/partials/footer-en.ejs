@@ -1,0 +1,16 @@
+<footer class="Page-footer Footer">
+  <div class="<% if (site.data['local/repos'] && site.data['local/repos'][page.repo]) { %>container-fluid<% } else { %>container<% } %>">
+    <% const utm_params = `utm_source=${theme.meta.url}&utm_medium=common-footer` %>
+    <div class="Footer-description">
+      <!-- Important links -->
+      <nav class="Footer-navs">
+        <ul><% site.data['local/en'].footer.links.forEach(link => { %><li><%- partial('_ksio/components/link', { link, utm: utm_params, wrap: true }) %></li><% }) %></ul>
+      </nav>
+      <div class="Footer-copyright">
+        <p><%- partial('_local/components/copyright-en', { utm: utm_params }) %></p>
+        <% const copyrightOwner = site.data['local/en'].copyright.owner %>
+        <p>Designed & developed with ♥ by <a href="<%= copyrightOwner.url %>?<%= utm_params %>" target="_blank" rel="external nofollow"><%= copyrightOwner.text %></a></p>
+      </div>
+    </div>
+  </div>
+</footer>

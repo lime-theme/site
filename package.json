@@ -23,7 +23,7 @@
     "@knosys/sdk": "^0.0.3",
     "@ntks/toolbox": "^0.0.6",
     "dotenv": "^16.4.5",
-    "hexo-theme-lime": "0.0.0-alpha.4",
+    "hexo-theme-lime": "0.0.0-alpha.5",
     "js-yaml": "4.1.0",
     "ksio": "0.0.3"
   },

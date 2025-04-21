@@ -1,0 +1,21 @@
+@import "../../helper";
+
+.Homepage {
+  &-body {
+    &:before {
+      content: "\0020";
+      display: block;
+      height: 0;
+      @include box-shadow(0 2px 2px 0 rgba(0, 0, 0, .1), 0 1px 5px 3px rgba(0, 0, 0, .1));
+    }
+  }
+
+  &-notice {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 400;
+    background-color: #f5f5f5;
+  }
+}
