@@ -46,16 +46,16 @@ permalink: /zh/guides/
 
 | 静态网站生成器 | 特定技术 |
 | --- | --- |
-| Jekyll | [kramdown](https://kramdown.gettalong.org/)、[Liquid](https://shopify.dev/docs/api/liquid) |
+| Jekyll | [Liquid](https://shopify.dev/docs/api/liquid)、[kramdown](https://kramdown.gettalong.org/) |
 | Hexo | [EJS](https://ejs.co/) |
 
-当你想利用主题内的可复用资源以及打算修改源码或为主题做贡献的话，需要了解下编写源码的语言（方言）：
+当你想利用主题内的[可复用资源](/zh/apis/html-reuse/)以及打算修改源码或为主题做贡献的话，需要了解下编写源码的语言（方言）：
 
 | 构成部分 | 语言或方言 |
 | --- | --- |
 | 模板 | [Liquid](https://shopify.dev/docs/api/liquid)（Jekyll）、[EJS](https://ejs.co/)（Hexo） |
 | 样式 | [Sass](https://sass-lang.com/)（SCSS） |
-| 脚本 | [CoffeeScript](https://coffeescript.org/)（遗留代码，新功能不用） |
+| 脚本 | [CoffeeScript](https://coffeescript.org/v1/)（遗留代码，新功能不用） |
 
 ## 如何使用
 

@@ -16,9 +16,27 @@
        └── ...
 ```
 
-`[ASSET_ROOT]` 在 Jekyll 和 Hexo 中分别是 `_assets` 与 `themes/lime/source`。即便如此，在实际使用时自定义文件的目录结构可以不按照这个来。
+其中，`[ASSET_ROOT]` 在不同的静态网站生成器中分别代表：
 
-另外，无论是静态资源还是动态模板，主题所提供的和强依赖的基本都放在 `ksio` 或 `_ksio` 文件夹下。
+| 静态网站生成器 | 具体文件夹 |
+| --- | --- |
+| Jekyll | `_assets` |
+| Hexo | `themes/lime/source` |
+
+无论是静态资源还是动态模板，主题所提供的和强依赖的基本都放在 `ksio` 或 `_ksio` 文件夹下，且为了便于区分与管理，建议自定义文件放在同级的 `local` 或 `_local` 文件夹中：
+
+```text
+[ASSET_ROOT]
+   ├── ...
+   └── stylesheets
+       ├── ksio
+       │   └── ...
+       ├── local
+       │   └── ...
+       └── ...
+```
+
+即便如此，在实际使用时自定义文件的目录结构可以不按照这个来。
 
 ## 下载安装
 
@@ -38,6 +56,10 @@ Jekyll 的主题暂不支持通过 [Gem](https://rubygems.org/) 的方式使用�
 - `hexo-theme-lime.zip`
 
 解压后将文件夹与文件复制或挪动到自己项目的指定位置。
+
+### 模板仓库
+
+通过特殊的 GitHub 仓库一键复制配置好的仓库内容。
 
 ## 创建文件
 
@@ -78,7 +100,7 @@ Jekyll 的主题暂不支持通过 [Gem](https://rubygems.org/) 的方式使用�
 
 ### 主题配置
 
-在 Hexo 中，可通过[指定方式](https://hexo.io/zh-cn/docs/configuration#%E4%BD%BF%E7%94%A8%E4%BB%A3%E6%9B%BF%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)为主题进行全局配置；而 Jekyll 并没有指定的配置方式，故主题的全局配置都挂在[配置文件](https://jekyllrb.com/docs/configuration/)中的 `ksio` 下面：
+在 Hexo 中，可通过[指定方式](https://hexo.io/zh-cn/docs/configuration#%E4%BD%BF%E7%94%A8%E4%BB%A3%E6%9B%BF%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)为主题进行全局配置，而 Jekyll 并没有指定的配置方式，故主题的全局配置都挂在[配置文件](https://jekyllrb.com/docs/configuration/)中的 `ksio` 下面：
 
 ```yaml
 ksio:
@@ -90,7 +112,7 @@ ksio:
       url: https://ourai.ws/
 ```
 
-全部配置项详见《[网站配置#模板](/zh/apis/site-config/#template)》。
+全部配置项详见《[网站配置#模板](/zh/apis/site-config/#模板)》。
 
 ### 页面配置
 
